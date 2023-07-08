@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100%;
+            min-height: 100vh;
+            background-color: rgb(38, 112, 86);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 90px;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .content .one{
+            flex: 1;
+            margin: 20px 20px;
+            box-shadow: 2px 8px;
+        }
+        .content .one img{
+            width: 400px;
+            height: auto;
+        }
+        .content .one h2{
+            margin: 15px;
+            font-size: 28px;
+            color: black;
+        }
+        .content .one p{
+            font-size: 16px;
+        }    
+        .content .two{
+            flex: 1;
+            margin: 20px 20px;
+            box-shadow: 2px 8px;
+        }
+        .content .two img{
+            width: 400px;
+            height: auto;
+        }
+        .content .two h2{
+            margin: 15px;
+            font-size: 28px;
+            color: black;
+        }
+        .content .two p{
+            font-size: 16px;
+        }    
+        .content .three{
+            flex: 1;
+            margin: 20px 20px;
+            box-shadow: 2px 8px;
+        }
+        .content .three img{
+            width: 400px;
+            height: auto;
+        }
+        .content .three h2{
+            margin: 15px;
+            font-size: 28px;
+            color: black;
+        }
+        .content .three p{
+            font-size: 16px;
+        }    
+        @media screen and (max-width:700px){
+            .content{
+                flex-direction: column;
+
+            }
+        }
+            
+        
+
+    </style>
+</head>
+<body>
+    <center><h1>DESSERTS:Sweet Dreams Are Made Of This.</h1></center>
+    <div class="container">
+        
+        <div class="content">
+            <div class="one">
+                <img src="https://www.funfoodfrolic.com/wp-content/uploads/2020/07/Gulab-Jamun-Thumbnail.jpg">
+                <h2>gulab-jamun</h2>
+                <p><strong> ₹40</strong></p>
+            </div>
+            <div class="two">
+                <img src="https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/shubhi-mishra20171004002157988.jpeg">
+                <h2>jalebi</h2>
+                <p><strong> ₹50</strong></p>
+            </div>
+            <div class="three">
+                <img src="https://www.cookwithmanali.com/wp-content/uploads/2017/06/Indian-Rice-Kheer-500x500.jpg">
+                <h2>kheer</h2>
+                <p><strong>₹60</strong></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

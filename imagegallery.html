@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageGallery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: rgb(145, 68, 80);
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gallery{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img-box{
+            width: 100px;
+            height: 500px;
+            margin: 10px;
+            border-radius: 10px;
+            background: url(https://amritsr.com/wp-content/uploads/2021/04/cholle-bhature.jpeg);
+            background-position: center;
+            background-size: cover;     
+            position: relative;      
+            transition: width 0.5s;
+        }
+        .img-box:nth-child(2){
+            background: url(https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/dal-makhani-recipe.jpg.webp);
+            background-size: cover;
+            background-position: center;                  
+        }
+        .img-box:nth-child(3){
+            background: url(https://everbake.co/wp-content/uploads/2021/07/RAJMA-CHAWAL.jpg);
+            background-size: cover;
+            background-position: center;                  
+        }
+        .img-box:nth-child(4){
+            background: url(https://www.archanaskitchen.com/images/archanaskitchen/Indian_Breakfast_Tiffins/South_Indian_Medu_Vada_Sambar_with_Medu_Vada_Maker-8_400.jpg);
+            background-size: cover;
+            background-position: center;                  
+        }
+        .img-box h3{
+            color: black;
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            
+            font-size: 20px;
+            
+            
+            
+            
+        }
+        .img-box:hover{
+            width: 300px;
+            cursor: pointer;
+        }
+        .img-box:hover{
+            opacity: 1;
+            bottom: 25px;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <center><h1>FOOD ITEMS</h1></center>
+    <div class="container">
+        <div class="gallery">
+            <div class="img-box"><h3>chhole-bhatura</h3>
+            <p>₹139</p></div>
+            <div class="img-box"><h3>dal-makhani</h3>
+            <p>₹159</p></div>
+            <div class="img-box"><h3>rajma-chawal</h3>
+            <p>₹199</p></div>
+            <div class="img-box"><h3>sambhar-vada</h3>
+            <p>₹128</p></div>
+      
+        </div>
+    </div>
+</body>
+</html>

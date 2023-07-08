@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pricing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: sans-serif;  
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(https://gumlet.assettype.com/freepressjournal/2023-03/e2618bd0-caea-4cba-a006-4651040296ea/Untitled_design___2023_03_13T182757_135.jpg) ;
+            background-size: cover;    
+            background-position: center;      
+        }
+        table,th,td{
+            padding:1rem;
+            
+        }
+        main.table{
+            width: 60vw;
+            height: 90vh;
+            background-color: #fff5 ;
+            box-shadow: 0.4rem;
+        }
+        .table_header{
+            width: 100%;
+            height: 10%;
+            background-color: #fff4;
+            padding-left: .8rem;
+            padding-right: 1rem;
+        }
+        .table_body{
+            width: 90%;
+            
+            background-color: #fffb;
+            margin: .8rem auto;
+            border-radius: .6rem;
+            overflow: auto;
+        }
+        .table{
+            width:100%;
+        }
+        .thead th{
+            position: sticky;
+        }
+        tbody tr:hover{
+            background-color: #fff5;
+        }
+        
+    </style>
+</head>
+<body>
+    <main class="table">
+        <section class="table_header">
+            <center><h1>Customers Order</h1></center>
+        </section>
+        <section class="table_body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Customer</th>
+                        <th>Location</th>
+                        <th>Order Date</th>
+                        <th>Status</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Riya</td>
+                        <td>River Club</td>
+                        <td>20 March,2023</td>
+                        <td>Shipped</td>
+                        <td><strong>₹128.90</strong></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Rahul</td>
+                        <td>Near Aanand Mall</td>
+                        <td>25 March,2023</td>
+                        <td>Delivered</td>
+                        <td><strong>₹159.00</strong></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Aditi</td>
+                        <td>Near Aanand Mall</td>
+                        <td>30 March,2023</td>
+                        <td>Cancelled</td>
+                        <td><strong>₹199.00</strong></td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Kriti</td>
+                        <td>Near ABC Complex</td>
+                        <td>02 June,2023</td>
+                        <td>Shipped</td>
+                        <td><strong>₹139.00</strong></td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Jeet</td>
+                        <td>ABC Comlex</td>
+                        <td>12 June,2023</td>
+                        <td>Delivered</td>
+                        <td><strong>₹159.00</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+    </main>
+</body>
+</html>

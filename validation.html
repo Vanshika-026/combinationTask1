@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: url(https://asset20.ckassets.com/blog/wp-content/uploads/sites/5/2019/12/Pav-Bhaji.jpg);
+            background-size: cover;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-family: sans-serif;
+
+        }
+        .container{
+            position: relative;
+            margin-top: 100px;
+            width: 450px;
+            height: auto;
+            background: rgb(100, 87, 87);
+            border-radius: 5px;
+        }
+        .content{
+
+            padding: 20px 130px;
+            font-size: 35px;
+            font-weight: 100;
+            color:white;
+        }
+        .login_1{
+            padding: 20px 40px;
+
+        }
+        .login_1 .font{
+            font-size: 18px;
+            color: rgb(18, 2, 34);
+            margin: 5px 0;
+        }
+        .login_1 input{
+            height: 40 px;
+            width: 140 px;
+            padding: 0 5px;
+            font-size: 18px;
+            font-size: 20px;
+            outline: none;
+            border: 1px solid black;
+        }
+        .login_1 .font1{
+            margin-top: 30px;
+        }
+        .login_1 button{
+            margin: 45px 0 30px 0;
+            height: 40px;
+            width: 300px;
+            font-size: 20px;
+            color: aliceblue;
+            cursor: pointer;
+            font-weight: bold ;
+            background: rgb(223, 72, 26);
+            border-radius: 2px;
+            
+        }
+        .login_1 button:hover{
+            background-color: rgb(87, 87, 197);
+
+        }
+        .login_1 #email_error,
+        .login_1 #password_error{
+            margin-top: 5px;
+            width: 300px;
+            font-size: 14px;
+            color: rgb(230, 29, 29);
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="content">User LogIn</h1>
+        <form class="login_1" action="pricing.html" method="post" name="form" onsubmit="return validated()">
+            <div class="font">EMAIL or PHONE:</div>
+            <input type="text" name="email">
+            <div id="email_error">Fill up your Email or Phone</div>
+            <div class="font1">PASSWORD:</div>
+            <input type="password" name="password">
+            <div id="password_error">Fill up your Password</div>
+            <button type="submit">Login</button>
+            
+        </form>
+
+    </div>
+    <script src="validation.js"></script>
+
+</body>
+
+</html>
