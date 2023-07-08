@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            font-family: sans-serif;
+        }
+        header{
+            height: 200px;
+            background: gray;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container{
+            width: 80%;
+            margin: 50px ;
+            clear:both;
+        }
+        container::before, container:after{
+            
+            display: table;
+            clear:both;
+        }
+        .right{
+            width:700px;
+            display: inline-block;
+            vertical-align: top;
+            
+        }
+        .right div{
+            background-color: gray;
+            height: 200px;
+        }
+        .right div + div{
+            margin-top: 50px;
+        }
+        .left{
+            width: 200px;
+            height: 200px;
+            background: black;
+            display: inline-block;
+            
+            position: sticky;
+            top: 50px;
+        }
+        h1{
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: rgba(0, 0, 0, 0.24);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
