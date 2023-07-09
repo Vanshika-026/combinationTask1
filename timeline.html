@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timeline</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 0;
+            font-family: sans-serif;
+            background-color: rgb(231, 180, 103);
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        h1{
+            margin: 0.3rem;
+            font-size: 3em;
+
+        }
+        h2{
+            margin-bottom: 0.5em;
+        }
+        .title{
+            text-align: center;
+        }
+        .title p{
+            color: rgb(8, 15, 15);
+            font-size: 2rem;
+            letter-spacing: 2px;
+
+
+        }
+        .timeline{
+            margin: 5em;
+            max-width: 35em;
+
+        }
+        .checkpoint{
+            max-width: 34rem;
+            padding-top: 2rem;
+            padding: bottom;
+            position: relative;
+        
+        }
+        .checkpoint div{
+            border: 2px solid gray;
+            text-align: center;
+        }
+        .checkpoint p{
+            line-height: 30px;
+            padding: 20px;
+            color: white;
+        }
+        .checkpoint:nth-child(odd){
+            border-left: 3px solid white;
+            padding-left: 4px;
+            transform: translate(37rem);
+        }
+        .checkpoint:nth-child(even){
+            border-right: 3px solid white;
+            padding-right: 4px;
+            transform: translate(3rem);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>ORDER DETAILS</h1>
+        <p>my orders</p>
+    </div>
+    <div class="timeline">
+        <div class="checkpoint">
+            <div>
+                <h2>Order 1: 1st January,2022</h2>
+                <p>The first step towards the success.</p>
+            </div>
+        </div>
+        <div class="checkpoint">
+            <div>
+                <h2>Order 2: 10th January,2022</h2>
+                <p>Keep Going...</p>
+            </div>
+        </div>
+        <div class="checkpoint">
+            <div>
+                <h2>Order 3: 14th January,2022</h2>
+                <p>Keep Going...</p>
+            </div>
+        </div>
+        <div class="checkpoint">
+            <div>
+                <h2>Order 4: 16th January,2022</h2>
+                <p>Keep Going...</p>
+            </div>
+        </div>
+        <div class="checkpoint">
+            <div>
+                <h2>Order 5: 20th January,2022</h2>
+                <p>Keep Going...</p>
+            </div>
+        </div>
+        <div class="checkpoint">
+            <div>
+                <h2>Order 6: 24th January,2022</h2>
+                <p>Keep Going...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

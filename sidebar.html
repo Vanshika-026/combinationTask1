@@ -3,72 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sidebar</title>
+    <title>slide</title>
     <style>
         *{
             margin: 0;
-            padding:0;
-            font-family: sans-serif;
+            padding: 0;
+            font-family: 'Poppins',sans-serif;
         }
-        header{
-            height: 200px;
-            background: gray;
-            text-align: center;
-            padding: 20px 0;
+        body{
+            min-height: 100vh;
+            background-color: rgb(160, 238, 234);
         }
-        .container{
-            width: 80%;
-            margin: 50px ;
-            clear:both;
+        header h2{
+            font-size: 40px;
+            color: antiquewhite;
+            padding-bottom: 4px;
         }
-        container::before, container:after{
+        .leftslide{
+            position: fixed;
             
-            display: table;
-            clear:both;
-        }
-        .right{
-            width:700px;
-            display: inline-block;
-            vertical-align: top;
-            
-        }
-        .right div{
-            background-color: gray;
-            height: 200px;
-        }
-        .right div + div{
-            margin-top: 50px;
-        }
-        .left{
+            top: 0;
+            left: 2px;
             width: 200px;
-            height: 200px;
-            background: black;
-            display: inline-block;
-            
-            position: sticky;
-            top: 50px;
+            height: 100%;
+            background: rgb(34, 30, 22);
+            display: flex;
+            flex-direction: column;
+            padding: 20px 20px;
+
         }
-        h1{
-            font-size: 3rem;
-            font-weight: bold;
-            text-shadow: rgba(0, 0, 0, 0.24);
+        .left-box{
+            overflow: auto;
+            padding-right:10px;
+
+        }
+        .left-inner {
+            font-size: 20px;
+            color: aliceblue;
+            
+            
+
+        }
+        ::-webkit-scrollbar{
+            width: 5px;
+            
+        }
+        ::-webkit-scrollbar-thumb{
+            background: white;
+            border-radius: 10px;
+        }
+        footer h2{
+            padding-bottom: 50px;
+            padding-top: 20px;
+            text-align: center;
+            color: aliceblue;
+            font-size: 20px;
+        }
+        .rightside{
+            text-align: center;
+            height: 100vh;
+            background-color: rgb(159, 114, 201);
+            display: flex;
+            width: 100%;
+                
+        }
+        .rightside h2{
+            font-size: 50px;
+            margin: auto;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1></h1>
-    </header>
-    <div class="container">
-        <div class="left"></div>
-        <div class="right">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+    <nav class="leftslide">
+        <header>
+            <h2>FAST-FOOD</h2>
+        </header>
+        <br>
+        <div class="left-box">
+            <div class="left-inner">
+                <p>
+                    <li>chhole-bhatura</li><br>
+                    <center>₹139</center>
+                    <hr><br>
+                    <li>Dal-Makhani</li><br>
+                    <center>₹159</center>
+                    <hr><br>
+                    <li>Rajma-Chawal</li><br>
+                    <center>₹199</center>
+                    <hr><br>
+                    <li>sambhar-vada</li><br>
+                    <center>₹128</center>
+                    <hr><br>
+                    <h3>SOME SWEETS</h3>
+                    <li>Gulab-Jamun</li><br>
+                    <center>₹40</center>
+                    <hr><br>
+                    <li>Jalebi</li><br>
+                    <center>₹50</center>
+                    <hr><br>
+                    <li>Kheer</li><br>
+                    <center>₹60</center>
+                    <hr><br>
+                    
+                </p>
+            </div>
         </div>
+        <footer>
+            <h2>A better way of living...</h2>
+        </footer>
+    </nav>
+    <div class="rightside">
+        <h2>FAST-FOOD ITEMS</h2>
     </div>
+    
 </body>
 </html>

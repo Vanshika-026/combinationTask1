@@ -12,30 +12,42 @@
     }
 
     body {
-      background-image: linear-gradient(rgba(4, 9, 3, 0.7), rgba(4, 9, 30, 0.7))
-      url("https://www.pngitem.com/pimgs/m/677-6775527_recipe-vector-salad-food-background-images-png-transparent.png");
+      background-image: linear-gradient(rgba(4, 9, 3, 0.7), rgba(4, 9, 30, 0.7)) url("https://www.pngitem.com/pimgs/m/677-6775527_recipe-vector-salad-food-background-images-png-transparent.png");
       font-family: "Roboto", sans-serif;
       min-height: 100vh;
       width: 100%;
       background-position: center;
       background-size: cover;
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+
     }
 
     .header {
-      background: rgb(14, 63, 14);
+      background: rgb(118, 240, 118);
       width: 100%;
-      height:60px;
-      
+      height: 60px;
+
+
       text-align: center;
       top: 0px;
       left: 0px;
-      position: sticky;
+      position: fixed;
     }
-    .footer{
-      position: sticky;
+
+    .footer {
+      position: fixed;
       bottom: 0px;
-      
+      text-align: center;
+      color: black;
+      width: 100%;
+      background: rgb(118, 240, 118);
+      height: 60px;
+
     }
 
     ul {
@@ -68,29 +80,51 @@
 
 <body>
   <header>
+
     <div class="header">
       <ul class="first">
-        <li>Home</li>
-        <li>Collection</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>LogIn</li>
+        <a href="sidebar.html">
+          <li>Home</li>
+        </a>
+        <a href="imagegallery.html">
+          <li>Items</li>
+        </a>
+        <a href="card.html">
+          <li>Sweets</li>
+        </a>
+        <a href="pricing.html">
+          <li>Order</li>
+        </a>
+        <a href="validation.html">
+          <li>LogIn</li>
+        </a>
+        <a href="timeline.html">
+          <li>Memorable</li>
+        </a>
       </ul>
     </div>
-    <div class="container">
-      <div class="content">
-        <h1>ABOUT THe SITE</h1>
-        <p>Don’t roll your eyes. Writing a paragraph━or, paragraphing, as it is apparently called━isn’t as simple as it may seem. Sure, there’s a beginning, a middle, and an end; that’s easy. But we’re going to get down to the nitty gritty: we’re talking paragraph sentences, transitions, and types (oh, my!).</p>
-      </div>
-      <div class="content">
-        <h1></h1>
-        <p></p>
-      </div>
-    </div>
+
   </header>
-  <footer>
-    <center><p>&copy;2023</p></center>
+  <main>
+  <div class="container">
+    <div class="content">
+      <h1>Fast Food</h1>
+
+      <img
+        src="https://img.freepik.com/premium-vector/fast-food-restaurant-building-with-drive-thru-service-flat-style-illustration-isolated-white-background_201904-201.jpg">
+        
+    </div>
+    
+  </div>
+   </main>
+
+  <footer class="footer">
+    <center>
+      <p>&copy;2023</p>
+    </center>
 
   </footer>
+
 </body>
+
 </html>
